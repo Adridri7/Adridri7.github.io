@@ -9,67 +9,68 @@
 </head>
 
 <body>
+
     <nav>
-        <div class="logo">Adrien</div>
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+        <div class="logo"><strong>Adrien</strong></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Projetcs</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
 
     <header id="home">
         <div class="container">
+
             <div class="profile-pic">
                 <img src="pp.jpg" alt="Profile Picture">
             </div>
+
             <div class="intro">
+
                 <h1>Hi, It's <span>Adri</span></h1>
-                <p>I'm a <span>Photographer</span></p>
+                <p>I'm a <span> FullStack Developper</span></p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eaque quasi veritatis illum placeat natus, laudantium temporibus voluptatum.</p>
+
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Adridri7/"><img src="logos/github.png" alt="golang" width="48" height="48"></a>
                     <a href="#"><i class="fab fa-xing"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
+
                 <button>Hire Me</button>
             </div>
         </div>
     </header>
 
 
-    <section id="services">
-        <h2>Services</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>Graphic Designer</h3>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Go-reloaded</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
             </div>
-            <div class="service-item">
-                <h3>Frontend Development</h3>
+            <div class="project-item">
+                <h3>Ascii Art</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit nam, iste reiciendis.</p>
             </div>
-            <div class="service-item">
-                <h3>Software Tester</h3>
+            <div class="project-item">
+                <h3>Ascii Art Web</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit nam, iste reiciendis.</p>
             </div>
-            <div class="service-item">
-                <h3>UI/UX Design</h3>
+            <div class="project-item">
+                <h3>Groupie-Tracker</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit nam, iste reiciendis.</p>
             </div>
-            <div class="service-item">
-                <h3>Content Manager</h3>
+            <div class="project-item">
+                <h3>Lem-In</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit nam, iste reiciendis.</p>
             </div>
-            <div class="service-item">
-                <h3>ISO Developer</h3>
+            <div class="project-item">
+                <h3>Forum</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit nam, iste reiciendis.</p>
             </div>
         </div>
@@ -79,38 +80,48 @@
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-list">
-            <div class="skill-item">Golang</div>
-            <div class="skill-item">HTML</div>
-            <div class="skill-item">CSS</div>
-            <div class="skill-item">JavaScript</div>
-            <div class="skill-item">Node.js</div>
-            <div class="skill-item">Git</div>
+            <div class="skill-item"><img src="logos/golang.png" alt="golang" width="48" height="48"></div>
+            <div class="skill-item"><img src="logos/html.png" alt="html"></div>
+            <div class="skill-item"><img src="logos/css.png" alt="css"></div>
+            <div class="skill-item"><img src="logos/js.png" alt="js"></div>
+            <div class="skill-item"><img src="logos/docker.png" alt="docker" width="48" height="48"></div>
+            <div class="skill-item"><img src="logos/git.png" alt="git"></div>
         </div>
     </section>
 
     <section id="education">
         <h2>My Education</h2>
-        <ul>
-            <li>2015-2019: Bachelor in Computer Science</li>
-            <li>2019-2021: Master in Web Development</li>
-        </ul>
+        <div class="timeline">
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2024: RNCP DevOps</h3>
+                    <p>Zone01 Rouen Normandie</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2023-2024: License Informatique</h3>
+                    <p>UFR Sciences et techniques 76800</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2020-2023: Baccalauréat Général</h3>
+                    <p>Lycée Marcel Sembat</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2019: Stage 3ème</h3>
+                    <p>Stage ingénieur a l'INSA du 76800</p>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
 
     <footer>
         <p>&copy; 2024 Adrien. Tous droits réservés.</p>
     </footer>
-
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
