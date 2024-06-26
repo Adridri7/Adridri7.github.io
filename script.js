@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("#contact form");
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("Message sent!");
-    });
+// script.js
+const menuToggle = document.querySelector('#mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
