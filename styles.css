@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h1 span {
+    color: #e94560;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#services .service-list,
+#skills .skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item,
+.skill-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #e94560;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 10px 0;
+}
