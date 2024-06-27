@@ -1,6 +1,6 @@
 @font-face {
     font-family: Minecraft;
-    src: url('MinecraftRegular.ttf')
+    src: url('../fonts/MinecraftRegular.ttf')
 }
 
 body {
@@ -168,31 +168,6 @@ section {
     border-radius: 5px;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-#contact form input,
-#contact form textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-#contact form button {
-    background-color: #EEC643;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 footer {
     background-color: #181818;
     text-align: center;
@@ -211,7 +186,6 @@ li a.active {
     position: relative;
     max-width: 600px;
     margin: 0 auto;
-    overflow-x: auto;
 }
 
 .timeline::after {
@@ -249,7 +223,7 @@ li a.active {
 }
 
 .timeline-item.left::after {
-    right: -12px;
+    right: -3.2%
 }
 
 .timeline-item.right {
@@ -257,7 +231,7 @@ li a.active {
 }
 
 .timeline-item.right::after {
-    left: -16px;
+    left: -4%;
 }
 
 .timeline-content {
@@ -266,6 +240,7 @@ li a.active {
     position: relative;
     border-radius: 6px;
     border: 1px solid #EEC643;
+    font-size: small;
 }
 
 .timeline-content h3 {
@@ -349,19 +324,41 @@ button {
         right: 0;
         height: auto;
         background-color: rgba(51, 51, 51, 0.9);
-        /* Semi-transparent */
         align-items: center;
         justify-content: center;
         display: none;
         border-radius: 8px;
-        /* Rounded corners for better appearance */
         padding: 20px;
-        /* Padding for better spacing */
     }
     .nav-links.active {
         display: flex;
     }
     .menu-toggle {
         display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .timeline-item {
+        width: 100%;
+        text-align: center;
+        width: auto;
+    }
+    .timeline-content {
+        font-size: 0.8rem;
+    }
+    .timeline::after {
+        left: 10px;
+    }
+    .timeline-item::after {
+        left: -16px;
+    }
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
+    .timeline-item.left::after,
+    .timeline-item.right::after {
+        left: -5px;
     }
 }
