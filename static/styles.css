@@ -266,11 +266,11 @@ li a.active {
 @keyframes words {
     0%,
     20% {
-        content: 'Web developer';
+        content: 'App developer';
     }
     21%,
     40% {
-        content: 'Software developer';
+        content: 'Zone01 Student';
     }
     41%,
     60% {
@@ -278,11 +278,11 @@ li a.active {
     }
     61%,
     80% {
-        content: 'Student';
+        content: 'Software tester';
     }
     81%,
     100% {
-        content: 'Software developer';
+        content: 'Web developer';
     }
 }
 
