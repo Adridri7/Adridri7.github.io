@@ -9,27 +9,30 @@
     <link rel="stylesheet" href="static/styles.css">
 </head>
 
-<body>
-
+<body class="dark-mode-bd">
     <nav>
-        <div class="logo"><strong>Adrien</strong></div>
+        <div id="nav" class="logo"><strong>Adrien</strong></div>
         <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
+            <li>
+                <input type="checkbox" id="tooglenight" class="cbx hidden" onclick="togglelight(this)" />
+                <label for="tooglenight" class="switch"></label>
+            </li>
         </ul>
         <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
     </nav>
 
-    <section id="home" class="home-section">
+    <section id="home" class="dark-mode-section">
         <div class="container">
             <div class="profile-pic">
                 <img src="icons/pp2.jpg" alt="Profile Picture">
             </div>
             <div class="intro">
                 <h1>Hi, It's <span>Adri</span></h1>
-                <h3 class="typing-text">I'm a <span></span></h3>
+                <h3 class="dark-mode-typing-text">I'm a <span></span></h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis nulla, quasi ipsam doloribus non perspiciatis omnis recusandae perferendis ut debitis asperiores consequatur aperiam voluptate ad repudiandae, adipisci natus, id tempora!
                     Assumenda in error reprehenderit esse ducimus vero aperiam! Ipsa, modi.</p>
                 <a href=""><button>Hire Me</button></a>
@@ -41,7 +44,7 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="dark-mode-bd">
         <h2>Projects</h2>
         <div class="project-list">
             <div class="project-item">
@@ -72,7 +75,7 @@
     </section>
 
 
-    <section id="skills">
+    <section id="skills" class="dark-mode-section">
         <h2>Skills</h2>
         <div class="skills-list">
             <div class="skill-item"><img src="icons/golang.png" alt="golang" width="48" height="48"></div>
@@ -85,29 +88,29 @@
         </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="dark-mode-bd">
         <h2>My Education</h2>
         <div class="timeline">
             <div class="timeline-item right">
-                <div class="timeline-content">
+                <div class="dark-mode-timeline-content">
                     <h3>2024: RNCP DevOps</h3>
                     <p>Zone01 Rouen Normandie</p>
                 </div>
             </div>
             <div class="timeline-item left">
-                <div class="timeline-content">
+                <div class="dark-mode-timeline-content">
                     <h3>2023-2024: License Informatique</h3>
                     <p>UFR Sciences et techniques 76800</p>
                 </div>
             </div>
             <div class="timeline-item right">
-                <div class="timeline-content">
+                <div class="dark-mode-timeline-content">
                     <h3>2020-2023: Baccalauréat Général</h3>
                     <p>Spécialités : Mathématiques, Physique-Chimie, NSI. <br><br>Lycée Marcel Sembat</p>
                 </div>
             </div>
             <div class="timeline-item left">
-                <div class="timeline-content">
+                <div class="dark-mode-timeline-content">
                     <h3>2019: Stage 3ème</h3>
                     <p>Stage ingénieur a l'INSA du 76800</p>
                 </div>
