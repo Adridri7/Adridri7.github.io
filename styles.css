@@ -337,6 +337,10 @@ li a.active {
     }
 }
 
+button {
+    font-family: Minecraft;
+}
+
 @media (max-width: 550px) {
     .nav-links {
         flex-direction: column;
