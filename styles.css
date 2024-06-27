@@ -337,7 +337,7 @@ li a.active {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     .nav-links {
         flex-direction: column;
         position: absolute;
