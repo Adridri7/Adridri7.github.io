@@ -98,10 +98,15 @@ nav .logo {
 }
 
 .typing-text {
-    font-size: 34px;
+    font-size: 20px;
     font-weight: 600;
     min-width: 280px;
     position: relative;
+}
+
+.intro p {
+    font-size: small;
+    overflow-x: auto;
 }
 
 .typing-text span {
@@ -128,61 +133,6 @@ nav .logo {
     right: 0;
     /* Changed to 'right: 0' to align from the right */
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to {
-        border-left-color: #141414;
-    }
-}
-
-@keyframes words {
-    0%,
-    20% {
-        content: 'Web developer';
-    }
-    21%,
-    40% {
-        content: 'Software developer';
-    }
-    41%,
-    60% {
-        content: 'Web designer';
-    }
-    61%,
-    80% {
-        content: 'Student';
-    }
-    81%,
-    100% {
-        content: 'Software developer';
-    }
-}
-
-@keyframes typing {
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
-        width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85% {
-        width: calc(100% + 8px);
-    }
 }
 
 section {
@@ -332,23 +282,82 @@ li a.active {
     height: 4rem;
 }
 
+@keyframes cursor {
+    to {
+        border-left-color: #141414;
+    }
+}
 
-/* Responsive Design 
+@keyframes words {
+    0%,
+    20% {
+        content: 'Web developer';
+    }
+    21%,
+    40% {
+        content: 'Software developer';
+    }
+    41%,
+    60% {
+        content: 'Web designer';
+    }
+    61%,
+    80% {
+        content: 'Student';
+    }
+    81%,
+    100% {
+        content: 'Software developer';
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
 
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 55px;
         right: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #333;
+        height: auto;
+        background-color: rgba(51, 51, 51, 0.9);
+        /* Semi-transparent */
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         display: none;
+        border-radius: 8px;
+        /* Rounded corners for better appearance */
+        padding: 20px;
+        /* Padding for better spacing */
     }
     .nav-links.active {
         display: flex;
     }
-}*/
+    .menu-toggle {
+        display: block;
+    }
+}
