@@ -56,6 +56,8 @@ function togglelight(checkbox) {
     if (checkbox.checked) {
         const typingText = document.querySelector(".dark-mode-typing-text");
         const timeline = document.querySelectorAll(".dark-mode-timeline-content");
+        const project = document.querySelectorAll(".dark-mode-project-item");
+        const skills = document.querySelectorAll(".dark-mode-skill-item");
 
         body.classList.remove("dark-mode-bd");
         body.classList.add("light-mode-bd");
@@ -96,9 +98,26 @@ function togglelight(checkbox) {
             timeline.classList.remove("dark-mode-timeline-content")
             timeline.classList.add("light-mode-timeline-content");
         });
+
+        project.forEach(project => {
+            project.classList.remove("dark-mode-project-item")
+            project.classList.add("light-mode-project-item");
+        });
+
+        project.forEach(project => {
+            project.classList.remove("dark-mode-project-item")
+            project.classList.add("light-mode-project-item");
+        });
+
+        skills.forEach(skills => {
+            skills.classList.remove("dark-mode-skill-item")
+            skills.classList.add("light-mode-skill-item");
+        });
     } else {
         const typingText = document.querySelector(".light-mode-typing-text");
         const timeline = document.querySelectorAll(".light-mode-timeline-content");
+        const project = document.querySelectorAll(".light-mode-project-item");
+        const skills = document.querySelectorAll(".light-mode-skill-item");
 
         body.classList.remove("light-mode-bd");
         body.classList.add("dark-mode-bd");
@@ -137,6 +156,17 @@ function togglelight(checkbox) {
         timeline.forEach(timeline => {
             timeline.classList.remove("light-mode-timeline-content");
             timeline.classList.add("dark-mode-timeline-content");
+        });
+
+
+        project.forEach(project => {
+            project.classList.remove("light-mode-skill-item")
+            project.classList.add("dark-mode-skill-item");
+        });
+
+        skills.forEach(skills => {
+            skills.classList.remove("light-mode-skill-item")
+            skills.classList.add("dark-mode-skill-item");
         });
     }
 }

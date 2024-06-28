@@ -206,6 +206,11 @@ nav .logo {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.container button:hover {
+    background-color: #414141;
 }
 
 .intro p {
@@ -226,18 +231,34 @@ section {
     flex-wrap: wrap;
 }
 
-.project-item {
+.dark-mode-project-item {
     background-color: #2a2a2a;
     padding: 20px;
     border-radius: 15px;
-    border: 1.5px;
+    border: 2px;
     border-style: solid;
     border-color: #EEC643;
     width: 200px;
 }
 
-.skill-item {
+.light-mode-project-item {
+    background-color: #d8d8d8;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: #EEC643;
+    width: 200px;
+}
+
+.dark-mode-skill-item {
     background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.light-mode-skill-item {
+    background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
 }
@@ -310,10 +331,10 @@ li a.active {
 
 .dark-mode-timeline-content {
     padding: 20px 30px;
-    background-color: #333;
+    background-color: #2a2a2a;
     position: relative;
     border-radius: 6px;
-    border: 1px solid #EEC643;
+    border: 2px solid #EEC643;
     font-size: small;
 }
 
@@ -322,7 +343,7 @@ li a.active {
     background-color: #d8d8d8;
     position: relative;
     border-radius: 6px;
-    border: 1.5px solid #EEC643;
+    border: 2px solid #EEC643;
     font-size: small;
 }
 
