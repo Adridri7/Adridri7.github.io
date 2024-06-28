@@ -393,12 +393,12 @@ li a.active {
 }
 
 .cbx:checked~label {
-    background: #222222;
+    background: #fad456;
 }
 
 .cbx:checked~label:after {
     left: 20px;
-    background: #3a3a3a;
+    background: #EEC643;
 }
 
 .cbx:disabled~label {
@@ -416,7 +416,7 @@ li a.active {
 
 @keyframes cursor {
     to {
-        border-left-color: #141414;
+        border-left-color: transparent;
     }
 }
 
@@ -431,11 +431,11 @@ li a.active {
     }
     41%,
     60% {
-        content: 'Web designer';
+        content: 'Gamer';
     }
     61%,
     80% {
-        content: 'Software tester';
+        content: 'Software engineer';
     }
     81%,
     100% {
