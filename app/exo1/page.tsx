@@ -62,6 +62,8 @@ export default function Exercise1() {
         className="hero-img rounded-xl object-cover"
         src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
         alt=""
+        height={500}
+        width={500}
       />
     </section>
   );

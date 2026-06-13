@@ -3,8 +3,6 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 gsap.registerPlugin(useGSAP);
 
@@ -23,12 +21,14 @@ export default function Exercise2() {
         "back.out(1.7)",
       ];
 
-      gsap.from(".ease-card", {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        ease: (index) => eases[index] as any,
+      gsap.utils.toArray<HTMLElement>(".ease-card").forEach((card, index) => {
+        gsap.from(card, {
+          y: 100,
+          opacity: 0,
+          duration: 1,
+          delay: index * 0.15,
+          ease: eases[index] ?? "power1.out",
+        });
       });
     },
     { scope: container }
